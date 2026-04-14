@@ -22,6 +22,6 @@ setup(name='MolScribe',
         "SmilesPE==0.0.3",
         "OpenNMT-py==2.2.0",
         "rdkit>=2022.3.3",
-        "albumentations==1.1.0",
+        "albumentations>=1.4.11",
         "timm==0.4.12"
       ])

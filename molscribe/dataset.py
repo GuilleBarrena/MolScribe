@@ -43,7 +43,7 @@ def get_transforms(input_size, augment=True, rotate=True, debug=False):
             # NormalizedGridDistortion(num_steps=10, distort_limit=0.3),
             A.CropAndPad(percent=[-0.01, 0.00], keep_size=False, p=0.5),
             PadWhite(pad_ratio=0.4, p=0.2),
-            A.Downscale(scale_min=0.2, scale_max=0.5, interpolation=3),
+            A.Downscale(scale_range=(0.2, 0.5)),
             A.Blur(),
             A.GaussNoise(),
             SaltAndPepperNoise(num_dots=20, p=0.5)
